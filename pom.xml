@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>koddas.web.war</groupId>
+  <groupId>com.sumanth.web.war</groupId>
   <artifactId>wwp</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>
@@ -32,4 +32,16 @@
       </plugin>
     </plugins>
   </build>
+ <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>releases</name>
+        <url>http://ec2-3-23-20-19.us-east-2.compute.amazonaws.com:8081/repository/Java_release/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>snapshots</name>
+        <url>http://ec2-3-23-20-19.us-east-2.compute.amazonaws.com:8081/repository/java-snapshot/</url>
+    </snapshotRepository>
+ </distributionManagement>
 </project>
